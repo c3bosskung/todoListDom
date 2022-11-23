@@ -1,8 +1,8 @@
-import {todoUserInterface} from "./UI/todoList.js";
-import {todoManagement} from "./lib/todoManagement.js";
+// import {todoUserInterface} from "./UI/todoList.js";
+// import {todoManagement} from "./lib/todoManagement.js";
 
-//const todoUserInterface = require('./UI/todoList.js')
-//const todoManagement = require('./lib/todoManagement.js')
+const todoUserInterface = require('./UI/todoList.js')
+const todoManagement = require('./lib/todoManagement.js')
 
 let { showTodoItem, showNumberOfDone, showNumberOfNotDone } = todoUserInterface()
 let { addTodo, removeTodo, findTodo, getTodos, getNumberOfDone, getNumberOfNotDone} = todoManagement();

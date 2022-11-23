@@ -1,5 +1,3 @@
-// const todoManage = require('../lib/todoManagement.js')
-
 function todoUserInterface() {
   function showTodoItem(newId, newDescription) {
     let listTodo = document.getElementById("listTodo")
@@ -8,13 +6,13 @@ function todoUserInterface() {
     newTodo.setAttribute('id', newId)
 
     const pElement = document.createElement('p')
-    pElement.textContent = newDescription
+    pElement.innerText = newDescription
 
     const button1 = document.createElement('button')
-    button1.textContent = 'Not Done'
+    button1.innerText = 'Not Done'
 
     const button2 = document.createElement('button')
-    button2.textContent = 'remove'
+    button2.innerText = 'remove'
 
     newTodo.appendChild(pElement)
     newTodo.appendChild(button1)
@@ -32,5 +30,5 @@ function todoUserInterface() {
   }
   return { showTodoItem, showNumberOfDone, showNumberOfNotDone }
 }
-//module.exports = todoUserInterface
-export {todoUserInterface}
+module.exports = todoUserInterface
+// export {todoUserInterface}
